@@ -42,7 +42,9 @@ public class Complaint implements Comparable<Complaint>
 	
 	private boolean isResponded ;
 	
+	private String ownersResponse ;
 
+	
 
 	public long getComplaintId() 
 	{
@@ -83,6 +85,18 @@ public class Complaint implements Comparable<Complaint>
 
 	public void setInMate(Long inMate) {
 		this.inMate = inMate;
+	}
+
+
+
+	public String getOwnersResponse() {
+		return ownersResponse;
+	}
+
+
+
+	public void setOwnersResponse(String ownersResponse) {
+		this.ownersResponse = ownersResponse;
 	}
 
 
@@ -188,7 +202,8 @@ public class Complaint implements Comparable<Complaint>
 	@Override
 	public String toString() {
 		return "Complaint [complaintId=" + complaintId + ", description=" + description + ", date=" + date + ", inMate="
-				+ inMate + ", myPg=" + myPg + ", isResolved=" + isResolved + ", isResponded=" + isResponded + "]";
+				+ inMate + ", myPg=" + myPg + ", isResolved=" + isResolved + ", isResponded=" + isResponded
+				+ ", ownersResponse=" + ownersResponse + "]";
 	}
 
 

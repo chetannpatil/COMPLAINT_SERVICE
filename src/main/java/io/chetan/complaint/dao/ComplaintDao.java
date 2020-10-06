@@ -11,4 +11,6 @@ public interface ComplaintDao extends CrudRepository<Complaint, Long>
 
 	List<Complaint> findByMyPg(long pgId);
 
+	List<Complaint> findByInMate(long inMate);
+
 }
