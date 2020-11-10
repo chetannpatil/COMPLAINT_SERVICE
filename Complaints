@@ -1,8 +1,104 @@
-2020-10-05 19:54:11.125  INFO 13008 --- [http-nio-8086-exec-8] i.c.c.controller.ComplaintController     : 
+2020-11-09 12:16:49.551  INFO [ComplaintService,,,] 16108 --- [restartedMain] io.chetan.ComplaintServiceApplication    : No active profile set, falling back to default profiles: default
+2020-11-09 12:17:00.331  INFO [ComplaintService,,,] 16108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-09 12:17:00.717  INFO [ComplaintService,,,] 16108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 361ms. Found 1 JPA repository interfaces.
+2020-11-09 12:17:01.285  WARN [ComplaintService,,,] 16108 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-09 12:17:02.237  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=daf290cf-5078-39fc-9f7c-9bba986512e9
+2020-11-09 12:17:07.086  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2002 (http)
+2020-11-09 12:17:07.116  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 12:17:07.118  INFO [ComplaintService,,,] 16108 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-11-09 12:17:07.598  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-09 12:17:07.599  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 18001 ms
+2020-11-09 12:17:09.081  WARN [ComplaintService,,,] 16108 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 12:17:09.082  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 12:17:09.502  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@22fba703
+2020-11-09 12:17:13.042  INFO [ComplaintService,,,] 16108 --- [restartedMain] io.chetan.ComplaintServiceApplication    : 
 
- ComplaintController- loadAllComplaintsOfAPg - pgid = 
- 1
-2020-10-05 19:54:11.125  INFO 13008 --- [http-nio-8086-exec-8] i.c.complaint.service.ComplaintService   : 
+ ComplaintServiceApplication - defaultSampler- 
 
- ComplaintService- loadAllComplaintsOfAPg - pgid = 
- 1
+
+2020-11-09 12:17:13.620  WARN [ComplaintService,,,] 16108 --- [restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: [Empty JSON_V2 message]}]
+2020-11-09 12:17:14.630  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 12:17:14.868  INFO [ComplaintService,,,] 16108 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-11-09 12:17:15.580  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 12:17:16.380  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 12:17:16.397  WARN [ComplaintService,,,] 16108 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2020-11-09 12:17:16.916  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2020-11-09 12:17:16.921  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 12:17:16.988  INFO [ComplaintService,,,] 16108 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-11-09 12:17:19.060  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 12:17:19.080  INFO [ComplaintService,,,] 16108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 12:17:19.175  WARN [ComplaintService,,,] 16108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-09 12:17:20.295  WARN [ComplaintService,,,] 16108 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-09 12:17:20.296  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-09 12:17:20.650  WARN [ComplaintService,,,] 16108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 12:17:21.251  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 12:17:22.245  WARN [ComplaintService,,,] 16108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-09 12:17:25.244  INFO [ComplaintService,,,] 16108 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-11-09 12:17:25.460  WARN [ComplaintService,,,] 16108 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-09 12:17:27.090  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-09 12:17:27.333  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-11-09 12:17:27.563  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-11-09 12:17:28.636  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-11-09 12:17:28.639  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-11-09 12:17:29.023  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-11-09 12:17:29.023  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-11-09 12:17:29.823  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:17:30.964  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-11-09 12:17:30.966  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-11-09 12:17:30.969  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-11-09 12:17:30.970  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-11-09 12:17:30.971  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-11-09 12:17:30.971  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-11-09 12:17:30.971  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-11-09 12:17:31.611  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-11-09 12:17:31.616  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-11-09 12:17:31.621  INFO [ComplaintService,,,] 16108 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-09 12:17:31.630  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1604904451627 with initial instances count: 1
+2020-11-09 12:17:31.668  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application COMPLAINTSERVICE with eureka with status UP
+2020-11-09 12:17:31.672  INFO [ComplaintService,,,] 16108 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1604904451672, current=UP, previous=STARTING]
+2020-11-09 12:17:31.692  INFO [ComplaintService,,,] 16108 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPLAINTSERVICE/CHPAPATI-IN.in.oracle.com:ComplaintService:2002: registering service...
+2020-11-09 12:17:31.791  INFO [ComplaintService,,,] 16108 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPLAINTSERVICE/CHPAPATI-IN.in.oracle.com:ComplaintService:2002 - registration status: 204
+2020-11-09 12:17:31.890  INFO [ComplaintService,,,] 16108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2002 (http) with context path ''
+2020-11-09 12:17:31.892  INFO [ComplaintService,,,] 16108 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2002
+2020-11-09 12:17:33.523  INFO [ComplaintService,,,] 16108 --- [restartedMain] io.chetan.ComplaintServiceApplication    : Started ComplaintServiceApplication in 47.267 seconds (JVM running for 49.537)
+2020-11-09 12:22:30.975  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:24:06.433  INFO [ComplaintService,,,] 16108 --- [http-nio-2002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 12:24:06.434  INFO [ComplaintService,,,] 16108 --- [http-nio-2002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 12:24:09.072  INFO [ComplaintService,,,] 16108 --- [http-nio-2002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2630 ms
+2020-11-09 12:24:09.448  INFO [ComplaintService,9633a0e40c1fd86c,77bcaf630881895f,true] 16108 --- [http-nio-2002-exec-1] i.c.c.controller.ComplaintController     : 
+
+ ComplaintController- read = 
+ 
+2020-11-09 12:24:11.954  INFO [ComplaintService,31c8d08abe62ffab,e238c93406736c01,true] 16108 --- [http-nio-2002-exec-2] i.c.c.controller.ComplaintController     : 
+
+ ComplaintController- read = 
+ 
+2020-11-09 12:24:32.175  INFO [ComplaintService,2060614c6dbc44a9,299c5b4ba3d8b744,true] 16108 --- [http-nio-2002-exec-3] i.c.c.controller.ComplaintController     : 
+
+ ComplaintController- read = 
+ 
+2020-11-09 12:27:30.978  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:32:30.980  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:37:30.982  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:42:30.985  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:47:30.988  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:52:30.989  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 12:57:30.991  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:02:30.993  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:07:30.995  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:12:30.998  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:17:31.053  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:22:31.055  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:27:31.058  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:32:31.059  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:37:31.067  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:42:31.073  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:47:31.076  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:52:31.079  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 13:57:31.081  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 14:02:31.083  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 14:07:31.086  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 14:12:31.088  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 14:17:31.089  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 14:22:31.090  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-09 14:27:31.092  INFO [ComplaintService,,,] 16108 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

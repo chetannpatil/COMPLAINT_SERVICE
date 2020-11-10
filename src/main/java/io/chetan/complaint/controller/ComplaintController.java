@@ -26,6 +26,30 @@ public class ComplaintController
 	
 	private static final Logger LOGGER = Logger.getLogger(ComplaintController.class.getName());
 	
+	
+	//CREATE
+	@GetMapping(value = "/read")
+	public Complaint read()
+	{
+		LOGGER.info("\n\n ComplaintController- read = \n ");
+		
+		//return complaintService.create(complaint);
+		
+		Complaint complaint = new Complaint();
+		
+		complaint.setComplaintId(12L);
+		
+		complaint.setDescription("Weather is hot AC is not working");
+		
+		complaint.setInMate(1L);
+		
+		complaint.setMyPg(1L);
+		
+		return complaint;
+	}
+	
+	
+	
 	//CREATE
 	@PostMapping(value = "/create")
 	public Complaint create(@RequestBody Complaint complaint)
